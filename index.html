@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Learn Nepali: Here and Now</title>
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="masthead main-link" onclick="switchSections('.main-pages', '.main-link', ' main-active', 0)" >Learn Nepali</h1>
+    </header>
+    <section id="main-pages">
+        <!--Home Page Begins-->
+        <main class="main-pages" id="home-page">
+            <h3>Why Learn Nepali?</h3>
+            <button id="start-lesson-button" class="main-link" onclick="switchSections('.main-pages', '.main-link', ' main-active', 1)"> Start Learning</button>
+            <ul class="why-nepali">
+                <li>Spoken by over 30 million people</li>
+                <li>Better bargain hunting in Nepal</li>
+                <li>Able to read amazing literature</li>
+                <li>Easier to learn Hindi after Nepali</li>
+            </ul>
+        </main>
+        <!--Home Page Ends-->
+        <!--Lesson Page Begins-->
+        <main class="main-pages" id="lesson-page">
+            <nav class="main-nav">
+                <li class="level-link" onclick="switchSections('.levels', '.level-link', ' active-level', 0)" >Beginner</li>
+                <li class="level-link" onclick="switchSections('.levels', '.level-link', ' active-level', 1)" >Intermediate</li>
+                <li class="level-link" onclick="switchSections('.levels', '.level-link', ' active-level', 2)" >Advanced</li>
+                <li class="level-link" onclick="switchSections('.levels', '.level-link', ' active-level', 3)" >About</li>
+            </nav>
+            <section class="levels">
+                <h2 class="level-title">Beginner (Characters) </h2>
+                <nav class="level-nav">
+                    <li class="lesson-link beginner-lesson-link" onclick="switchSections('.beginner-lesson', '.beginner-lesson-link', ' active-lesson', 0)" >Vowels</li>
+                    <li class="lesson-link beginner-lesson-link" onclick="switchSections('.beginner-lesson', '.beginner-lesson-link', ' active-lesson', 1)" >Syllables</li>
+                    <li class="lesson-link beginner-lesson-link" onclick="switchSections('.beginner-lesson', '.beginner-lesson-link', ' active-lesson', 2)" >Compounds</li>
+                </nav>
+                <div class="beginner-lesson">
+                    <section class="lesson-box">
+                        <h3 class="lesson-title">Vowels</h3>
+                        <div class="item-box" id="vowel-box"></div>
+                        <button class="prev" onclick="vowelLesson.getPreviousItem('vowel-box')" >Prev</button>
+                        <button class="next" onclick="vowelLesson.getNextItem('vowel-box')" >Next</button>
+                    </section>
+                    <section class="description-box" id="vowel-description"></section>
+                </div>
+                <div class="beginner-lesson">
+                    
+                    <section class="lesson-box">
+                        <h3 class="lesson-title">Syllables</h3>
+                        <div class="item-box" id="syllable-box"></div>
+                        <button class="prev" onclick="syllableLesson.getPreviousItem('syllable-box')" >Prev</button>
+                        <button class="next" onclick="syllableLesson.getNextItem('syllable-box')" >Next</button>
+                    </section>
+                    <section class="description-box" id = "syllable-description"></section>
+                </div>
+                <div class="beginner-lesson">
+                    
+                    <section class="lesson-box">
+                        <h3 class="lesson-title">Compounds</h3>
+                        <div class="item-box" id="compound-box"></div>
+                        <button class="prev" onclick="compoundLesson.getPreviousItem('compound-box')" >Prev</button>
+                        <button class="next" onclick="compoundLesson.getNextItem('compound-box')" >Next</button>
+                    </section>
+                    <section class="description-box" id = "compound-description"></section>
+                </div>
+            </section>
+            <section class="levels">
+                <h2 class="level-title">Intermediate (Words) </h2>
+                <nav class="level-nav">
+                    <li class="lesson-link intermediate-lesson-link" onclick="switchSections('.intermediate-lesson', '.intermediate-lesson-link', ' active-lesson', 0)" >Noun</li>
+                    <li class="lesson-link intermediate-lesson-link" onclick="switchSections('.intermediate-lesson', '.intermediate-lesson-link', ' active-lesson', 1)" >Pronoun</li>
+                    <li class="lesson-link intermediate-lesson-link" onclick="switchSections('.intermediate-lesson', '.intermediate-lesson-link', ' active-lesson', 2)" >Verb</li>
+                    <li class="lesson-link intermediate-lesson-link" onclick="switchSections('.intermediate-lesson', '.intermediate-lesson-link', ' active-lesson', 3)" >Adjective</li>
+                    <li class="lesson-link intermediate-lesson-link" onclick="switchSections('.intermediate-lesson', '.intermediate-lesson-link', ' active-lesson', 4)" >Adverb</li>
+                    <li class="lesson-link intermediate-lesson-link" onclick="switchSections('.intermediate-lesson', '.intermediate-lesson-link', ' active-lesson', 5)" >Conjunction</li>
+                    <li class="lesson-link intermediate-lesson-link" onclick="switchSections('.intermediate-lesson', '.intermediate-lesson-link', ' active-lesson', 6)" >Preposition</li>
+                </nav>
+                <div class="intermediate-lesson">
+                    
+                    <section class="lesson-box">
+                            <h3 class="lesson-title">Noun</h3>
+                    </section>
+                    <section class="description-box"></section>
+                </div>
+                <div class="intermediate-lesson">
+                    
+                    <section class="lesson-box">
+                            <h3 class="lesson-title">Pronoun</h3>
+                    </section>
+                    <section class="description-box"></section>
+                </div>
+                <div class="intermediate-lesson">
+                    
+                    <section class="lesson-box">
+                            <h3 class="lesson-title">Verb</h3>
+                    </section>
+                    <section class="description-box"></section>
+                </div>
+                <div class="intermediate-lesson">
+                    
+                    <section class="lesson-box">
+                            <h3 class="lesson-title">Adjective</h3>
+                    </section>
+                    <section class="description-box"></section>
+                </div>
+                <div class="intermediate-lesson">
+                    
+                    <section class="lesson-box">
+                            <h3 class="lesson-title">Adverb</h3>
+                    </section>
+                    <section class="description-box"></section>
+                </div>
+                <div class="intermediate-lesson">
+                   
+                    <section class="lesson-box">
+                            <h3 class="lesson-title">Conjunction</h3>
+                    </section>
+                    <section class="description-box"></section>
+                </div>
+                <div class="intermediate-lesson">
+                    
+                    <section class="lesson-box">
+                            <h3 class="lesson-title">Preposition</h3>
+                    </section>
+                    <section class="description-box"></section>
+                </div>
+                </section>
+            <section class="levels">
+                <h2 class="level-title">Advanced (Sentences)</h2>
+                <nav class="level-nav">
+                    <li class="lesson-link advanced-lesson-link" onclick="switchSections('.advanced-lesson', '.advanced-lesson-link', ' active-lesson', 0)" >Present</li>
+                    <li class="lesson-link advanced-lesson-link" onclick="switchSections('.advanced-lesson', '.advanced-lesson-link', ' active-lesson', 1)" >Past</li>
+                    <li class="lesson-link advanced-lesson-link" onclick="switchSections('.advanced-lesson', '.advanced-lesson-link', ' active-lesson', 2)" >Future</li>
+                </nav>
+                <div class="advanced-lesson">
+                    
+                    <section class="lesson-box">
+                            <h3 class="lesson-title">Present</h3>
+                    </section>
+                    <section class="description-box"></section>
+                </div>
+                <div class="advanced-lesson">
+                    
+                    <section class="lesson-box">
+                            <h3 class="lesson-title">Past</h3>
+                    </section>
+                    <section class="description-box"></section>
+                </div>
+                <div class="advanced-lesson">
+                    
+                    <section class="lesson-box">
+                            <h3 class="lesson-title">Future</h3>
+                    </section>
+                    <section class="description-box"></section>
+                </div>
+            
+            </section>
+            <section class="levels">
+                <h2 class="level-title">About</h2>
+                <nav class="level-nav">
+                    <li class="lesson-link about-section-link" onclick="switchSections('.about-section', '.about-section-link', ' active-lesson', 0)" >Letters</li>
+                    <li class="lesson-link about-section-link" onclick="switchSections('.about-section', '.about-section-link', ' active-lesson', 1)" >Words</li>
+                    <li class="lesson-link about-section-link" onclick="switchSections('.about-section', '.about-section-link', ' active-lesson', 2)" >Sentences</li>
+                    <li class="lesson-link about-section-link" onclick="switchSections('.about-section', '.about-section-link', ' active-lesson', 3)" >About LN-App</li>
+                </nav>
+                <div class="about-section">
+                   
+                    <section class="lesson-box">
+                            <h3 class="lesson-title">Letters</h3>
+                    </section>
+                    <section class="description-box"></section>
+                </div>
+                <div class="about-section">
+                    
+                    <section class="lesson-box">
+                            <h3 class="lesson-title">Words</h3>
+                    </section>
+                    <section class="description-box"></section>
+                </div>
+                <div class="about-section">
+                    
+                    <section class="lesson-box">
+                            <h3 class="lesson-title">Sentences</h3>
+                    </section>
+                    <section class="description-box"></section>
+                </div>
+                <div class="about-section">
+                   
+                    <section class="lesson-box">
+                            <h3 class="lesson-title">About LN App</h3>
+                    </section>
+                    <section class="description-box"></section>
+                </div>
+            </section>
+        </main>
+        <!--Lesson Page Ends-->
+    </section>
+    <footer>
+        &copy; Anil Bhattarai, 2019
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

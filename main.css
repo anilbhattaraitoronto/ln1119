@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    --theme1: rgb(14, 14, 195);
+    --theme2: yellowgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-header{
+    width: 370px;
+    margin: auto;
+    background: var(--theme1);
+}
+.masthead{
+    width: 320px;
+    margin: auto;
+    color: white;
+    font-size: 2.5em;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 1px white;
+    border-radius: 8px;
+    
+}
+@keyframes masthead {
+    from {transform: scale(.8);}
+    to {transform: scale(1);}
+}
+.masthead::after{
+    content: "A New Language, A Whole New World";
+    display: block;
+    color: orange;
+    padding: 5px;
+    font-size: .32em;
+    margin: 10px auto;
+    font-style: italic;
+    word-spacing: 8px;
+    font-weight: lighter;
+}
+#home-page{
+    width: 370px;
+    text-align: center;
+    margin: auto;
+    background: var(--theme1);
+}
+#lesson-page{
+    width: 370px;
+    margin: auto;
+    background: var(--theme1);
+}
+#home-page h3{
+    margin: auto;
+    /* border-radius: 8px; */
+    padding: 10px 0;
+    color: white;
+}
+.why-nepali{
+    width: 320px;
+    padding: 5px;
+    margin: auto;
+    box-shadow: 0 0 3px var(--theme2);
+    border-radius: 8px;
+    /* border: 1px solid var(--theme2); */
+}
+.why-nepali li{
+    list-style-type: none;
+    padding: 6px 0;
+    color: white;
+}
+#home-page #start-lesson-button{
+    border:none;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    margin: 20px auto;
+    font-size: 1.5em;
+    border-radius: 50%;
+    background: white;
+    color: var(--theme1);
+    transition: 400ms ease-out;
+    animation: masthead 5s ease-in-out infinite alternate;
+}
+#home-page #start-lesson-button:hover{
+    box-shadow: 0 0 20px white;
+}
+.main-nav{
+    width: 370px;
+    margin: auto;
+    text-align: center;
+    background: var(--theme1);
+}
+.level-nav{
+    width: 370px;
+    margin: auto;
+    text-align: center;
+    background: var(--theme1);
+}
+.level-link{
+    display: inline-block;
+    list-style-type: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 2px 8px;
+    box-shadow: 1px 0 0;
+    border-top-right-radius: 8px;
+}
+.level-link:hover{
+    color: var(--theme2);
+}
+
+.lesson-link{
+    display: inline-block;
+    list-style-type: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    background: var(--theme1);
+    padding: 2px 8px;
+    margin: 0 1px;
+    box-shadow: 1px 0px 0px white;
+    border-top-right-radius: 8px;
+}
+.active-level{
+    background: var(--theme1);
+    color: var(--theme2);
+}
+.active-lesson{
+color: var(--theme1);
+background: white;
+}
+.level-title{
+    text-align: center;
+    color: var(--theme2);
+    margin: auto;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: .8em;
+    background: var(--theme1);
+    width: 370px;
+}
+.beginner-lesson, .intermediate-lesson, .advanced-lesson, .about-section{
+    width: 370px;
+    /* height: 420px; */
+    margin: auto;
+    text-align: center;
+    background: var(--theme1);
+}
+.lesson-title{
+    position: absolute;
+    top: 2px;
+    color: var(--theme1);
+    padding: 5px 0;
+}
+.lesson-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    background: white;
+    margin: 10px auto;
+    /* background: var(--theme1); */
+    box-shadow: 1px 1px 2px gray;
+    border-radius: 8px;
+}
+.nepali{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--theme1);
+    color: white;
+    font-size: 6em;
+    line-height: 0;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px white;
+}
+.english{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: var(--theme2);
+    padding: 10px;
+    border-radius: 50%;
+    background: var(--theme1);
+    box-shadow: 0 0 5px white;
+    font-size: 1.3em;
+}
+.sound{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.picture{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.prev{
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    margin: 0 2px;
+    font-size: .8em;
+    background: var(--theme1);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    box-shadow: 0 0 3px white;
+}
+.next{
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    margin: 0 2px;
+    font-size: .8em;
+    background: var(--theme1);
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    box-shadow: 0 0 1px white;
+}
+.prev:hover, .next:hover{
+    color: var(--theme2);
+}
+#vowel-description, #syllable-description, #compound-description{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 5px;
+    width: 370px;
+    margin: auto;
+    border: 1px solid var(--theme1);
+}
+#vowel-description >div, #syllable-description > div, #compound-description > div{
+    background: white;
+}
+footer{
+    width: 370px;
+    margin: auto;
+    color: var(--theme2);
+    padding: 10px 0;
+    text-align: center;
+    background: var(--theme1);
+}
