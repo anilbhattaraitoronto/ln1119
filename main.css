@@ -8,7 +8,7 @@
 }
 
 .main-header{
-    width: 370px;
+    width: 330px;
     margin: auto;
     background: var(--theme1);
 }
@@ -22,7 +22,6 @@
     cursor: pointer;
     box-shadow: 0 0 1px white;
     border-radius: 8px;
-    
 }
 @keyframes masthead {
     from {transform: scale(.8);}
@@ -40,13 +39,13 @@
     font-weight: lighter;
 }
 #home-page{
-    width: 370px;
+    width: 330px;
     text-align: center;
     margin: auto;
     background: var(--theme1);
 }
 #lesson-page{
-    width: 370px;
+    width: 330px;
     margin: auto;
     background: var(--theme1);
 }
@@ -86,13 +85,13 @@
     box-shadow: 0 0 20px white;
 }
 .main-nav{
-    width: 370px;
+    width: 330px;
     margin: auto;
     text-align: center;
     background: var(--theme1);
 }
 .level-nav{
-    width: 370px;
+    width: 330px;
     margin: auto;
     text-align: center;
     background: var(--theme1);
@@ -102,7 +101,7 @@
     list-style-type: none;
     color: white;
     cursor: pointer;
-    font-size: 1em;
+    font-size: .9em;
     padding: 2px 8px;
     box-shadow: 1px 0 0;
     border-top-right-radius: 8px;
@@ -116,7 +115,7 @@
     list-style-type: none;
     color: white;
     cursor: pointer;
-    font-size: 1em;
+    font-size: .9em;
     background: var(--theme1);
     padding: 2px 8px;
     margin: 0 1px;
@@ -139,10 +138,10 @@ background: white;
     text-transform: uppercase;
     font-size: .8em;
     background: var(--theme1);
-    width: 370px;
+    width: 330px;
 }
 .beginner-lesson, .intermediate-lesson, .advanced-lesson, .about-section{
-    width: 370px;
+    width: 330px;
     /* height: 420px; */
     margin: auto;
     text-align: center;
@@ -159,8 +158,8 @@ background: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     background: white;
     margin: 10px auto;
     /* background: var(--theme1); */
@@ -237,7 +236,7 @@ background: white;
     display: grid;
     grid-template-columns: repeat(6, auto);
     grid-gap: 5px;
-    width: 370px;
+    width: 330px;
     margin: auto;
     border: 1px solid var(--theme1);
 }
@@ -245,7 +244,7 @@ background: white;
     background: white;
 }
 footer{
-    width: 370px;
+    width: 330px;
     margin: auto;
     color: var(--theme2);
     padding: 10px 0;
