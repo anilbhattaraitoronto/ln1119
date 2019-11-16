@@ -90,8 +90,8 @@ syllableLesson.getDescription("syllable-description");
 let compoundLesson = new Lesson(
     ["क", "का", "कि", "की", "कु", "कू", "के", "कै", "को", "कौ", "कं", "क:"],
     ["ka", "kaa", "ki", "kee", "ku", "koo", "keh", "kaih", "ko", "kau", "kahm", "kaha"],
-    ["ka.mp3", "kaa.mp3", "ki.mp3", "kee.mp3", "ku.mp3", "koo.mp3", "keh.mp3", "kaih.mp3", "ko.mp3", "kau.mp3", "kahm.mp3", "kaha.mp3"],
-    ["ka.png", "kaa.png", "ki.png", "kee.png", "ku.png", "koo.png", "keh.png", "kaih.png", "ko.png", "kau.png", "kahm.png", "kaha.png"]
+    ["./sounds/root_syllables/compounds/ka.mp3", "./sounds/root_syllables/compounds/kaa.mp3", "./sounds/root_syllables/compounds/ki.mp3", "./sounds/root_syllables/compounds/kee.mp3", "./sounds/root_syllables/compounds/ku.mp3", "./sounds/root_syllables/compounds/koo.mp3", "./sounds/root_syllables/compounds/ke.mp3", "./sounds/root_syllables/compounds/kai.mp3", "./sounds/root_syllables/compounds/ko.mp3", "./sounds/root_syllables/compounds/kau.mp3", "./sounds/root_syllables/compounds/kam.mp3", "./sounds/root_syllables/compounds/kaha.mp3"],
+    ["ka.png", "kaa.png", "ki.png", "kee.png", "ku.png", "koo.png", "ke.png", "kai.png", "ko.png", "kau.png", "kam.png", "kaha.png"]
 );
 compoundLesson.getItem("compound-box");
 compoundLesson.getDescription("compound-description");
