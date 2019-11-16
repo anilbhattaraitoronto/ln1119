@@ -37,7 +37,9 @@ function Lesson(nepali, english, sound, picture) {
         let item = `
         <div class="nepali">${this.nepali[this.itemIndex]}</div>
         <div class="english">${this.english[this.itemIndex]}</div>
-        <div class="sound">${this.sound[this.itemIndex]}</div>
+        <audio controls class="sound">
+        <source src="${this.sound[this.itemIndex]}" type="audio/ogg"/>
+        </audio>
         <div class="picture">${this.picture[this.itemIndex]}</div>
         `
         itemBox.innerHTML = item;
@@ -70,7 +72,7 @@ function Lesson(nepali, english, sound, picture) {
 let vowelLesson = new Lesson(
     ["अ", "आ", "इ", "ई", "उ", "ऊ", "ए", "ऐ", "ओ", "औ", "अं", "अ:"],
     ["a", "aa", "i", "ee", "u", "oo", "eh", "aih", "o", "au", "ahm", "aha"],
-    ["a.mp3", "aa.mp3", "i.mp3", "ee.mp3", "u.mp3", "oo.mp3", "eh.mp3", "aih.mp3", "o.mp3", "au.mp3", "ahm.mp3", "aha.mp3"],
+    ["./sounds/vowels/mp3/a.mp3", "./sounds/vowels/mp3/aa.mp3", "./sounds/vowels/mp3/i.mp3", "./sounds/vowels/mp3/ee.mp3", "./sounds/vowels/mp3/u.mp3", "./sounds/vowels/mp3/oo.mp3", "./sounds/vowels/mp3/eh.mp3", "./sounds/vowels/mp3/aih.mp3", "./sounds/vowels/mp3/o.mp3", "./sounds/vowels/mp3/au.mp3", "./sounds/vowels/mp3/ahm.mp3", "./sounds/vowels/mp3/aha.mp3"],
     ["a.png", "aa.png", "i.png", "ee.png", "u.png", "oo.png", "eh.png", "aih.png", "o.png", "au.png", "ahm.png", "aha.png"]
 );
 vowelLesson.getItem("vowel-box");
@@ -79,7 +81,7 @@ vowelLesson.getDescription("vowel-description");
 let syllableLesson = new Lesson(
     ["क", "ख", "ग", "घ", "ङ", "च", "छ", "ज", "झ", "ञ", "ट", "ठ", "ड", "ढ", "ण", "त", "थ", "द", "ध", "न", "प", "फ", "ब", "भ", "म", "य", "र", "ल", "व", "स", "ष", "श", "ह", "क्ष", "त्र", "ज्ञ"],
     ["ka", "kha", "ga", "gha", "nga", "cha", "chha", "ja", "jha", "yan", "ta", "tha", "da", "dha", "nna", "tta", "ttha", "dda", "ddha", "na", "pa", "pha", "ba", "bha", "ma", "ya", "ra", "la", "va", "sa", "ssha", "sha", "ha", "chya", "tra", "gyan"],
-    ["ka.mp3", "kha.mp3", "ga", "gha", "nga", "cha", "chha", "ja", "jha", "yan", "ta", "tha", "da", "dha", "nna", "tta", "ttha", "dda", "ddha", "na", "pa", "pha", "ba", "bha", "ma", "ya", "ra", "la", "va", "sa", "ssha", "sha", "ha", "chya", "tra", "gyan"],
+    ["./sounds/root_syllables/syllables/ka.mp3", "./sounds/root_syllables/syllables/kha.mp3", "./sounds/root_syllables/syllables/ga.mp3", "./sounds/root_syllables/syllables/gha.mp3", "./sounds/root_syllables/syllables/nga.mp3", "./sounds/root_syllables/syllables/cha.mp3", "./sounds/root_syllables/syllables/chha.mp3", "./sounds/root_syllables/syllables/ja.mp3", "./sounds/root_syllables/syllables/jha.mp3", "./sounds/root_syllables/syllables/yan.mp3", "./sounds/root_syllables/syllables/ta.mp3", "./sounds/root_syllables/syllables/tha.mp3", "./sounds/root_syllables/syllables/da.mp3", "./sounds/root_syllables/syllables/dha.mp3", "./sounds/root_syllables/syllables/nna.mp3", "./sounds/root_syllables/syllables/tta.mp3", "./sounds/root_syllables/syllables/ttha.mp3", "./sounds/root_syllables/syllables/dda.mp3", "./sounds/root_syllables/syllables/ddha.mp3", "./sounds/root_syllables/syllables/na.mp3", "./sounds/root_syllables/syllables/pa.mp3", "./sounds/root_syllables/syllables/pha.mp3", "./sounds/root_syllables/syllables/ba.mp3", "./sounds/root_syllables/syllables/bha.mp3", "./sounds/root_syllables/syllables/ma.mp3", "./sounds/root_syllables/syllables/ya.mp3", "./sounds/root_syllables/syllables/ra.mp3", "./sounds/root_syllables/syllables/la.mp3", "./sounds/root_syllables/syllables/va.mp3", "./sounds/root_syllables/syllables/sa.mp3", "./sounds/root_syllables/syllables/ssha.mp3", "./sounds/root_syllables/syllables/sha.mp3", "./sounds/root_syllables/syllables/ha.mp3", "./sounds/root_syllables/syllables/chya.mp3", "./sounds/root_syllables/syllables/tra.mp3", "./sounds/root_syllables/syllables/gyan.mp3"],
     ["ka.png", "kha.mp3", "ga.mp3", "gha", "nga", "cha", "chha", "ja", "jha", "yan", "ta", "tha", "da", "dha", "nna", "tta", "ttha", "dda", "ddha", "na", "pa", "pha", "ba", "bha", "ma", "ya", "ra", "la", "va", "sa", "ssha", "sha", "ha", "chya", "tra", "gyan"]
 );
 syllableLesson.getItem("syllable-box");
