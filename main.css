@@ -196,11 +196,13 @@ background: white;
     width: 160px;
     height: 20px;
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 2px;
+    left: 2px;
     background: var(--theme1);
     color: var(--theme2);
     border-radius: 20px;
+    padding: 0;
+    border: none;
 }
 .picture{
     position: absolute;
