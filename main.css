@@ -11,16 +11,17 @@
     width: 330px;
     margin: auto;
     background: var(--theme1);
+    box-shadow: 0 0 1px white;
 }
 .masthead{
     width: 90%;
     margin: auto;
     color: white;
-    font-size: 2.5em;
-    padding: 15px 0;
+    font-size: 2em;
+    padding: 4px 0;
     text-align: center;
     cursor: pointer;
-    box-shadow: 0 0 1px white;
+    
     border-radius: 8px;
 }
 @keyframes masthead {
@@ -31,9 +32,9 @@
     content: "A New Language, A Whole New World";
     display: block;
     color: orange;
-    padding: 5px;
+    margin: 0 0 4px 0;
     font-size: .32em;
-    margin: 10px auto;
+    margin: auto;
     font-style: italic;
     word-spacing: 8px;
     font-weight: lighter;
@@ -52,7 +53,7 @@
 #home-page h3{
     margin: auto;
     /* border-radius: 8px; */
-    padding: 10px 0;
+    padding: 5px 0 0 0;
     color: white;
 }
 .why-nepali{
@@ -67,14 +68,15 @@
     list-style-type: none;
     padding: 6px 0;
     color: white;
+    font-size: .8em;
 }
 #home-page #start-lesson-button{
     border:none;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     cursor: pointer;
-    margin: 20px auto;
-    font-size: 1.5em;
+    margin: 8px auto;
+    font-size: 1.2em;
     border-radius: 50%;
     background: white;
     color: var(--theme1);
@@ -101,10 +103,10 @@
     list-style-type: none;
     color: white;
     cursor: pointer;
-    font-size: .9em;
+    font-size: .8em;
     padding: 2px 8px;
     box-shadow: 1px 0 0;
-    border-top-right-radius: 8px;
+    border-top-right-radius: 4px;
 }
 .level-link:hover{
     color: var(--theme2);
@@ -115,10 +117,9 @@
     list-style-type: none;
     color: white;
     cursor: pointer;
-    font-size: .9em;
+    font-size: .8em;
     background: var(--theme1);
-    padding: 2px 8px;
-    margin: 0 1px;
+    padding: 4px;
     box-shadow: 1px 0px 0px white;
     border-top-right-radius: 8px;
 }
@@ -161,7 +162,7 @@ background: white;
     width: 320px;
     height: 320px;
     background: white;
-    margin: 10px auto;
+    margin: auto;
     /* background: var(--theme1); */
     box-shadow: 1px 1px 2px gray;
     border-radius: 8px;
@@ -250,4 +251,5 @@ footer{
     padding: 10px 0;
     text-align: center;
     background: var(--theme1);
+    font-size: .8em;
 }
