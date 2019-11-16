@@ -222,11 +222,11 @@ background: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120px;
-    width: 120px;
+    height: 130px;
+    width: 130px;
     padding: 8px;
-    background: var(--theme1);
-    color: white;
+    border: 1px solid var(--theme1);
+    color: var(--theme1);
     right: 1px;
     bottom: 1px;
 }
@@ -235,13 +235,13 @@ background: white;
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     bottom: 1px;
     left: 1px;
     text-align: center;
-    background: var(--theme1);
-    color: white;
+    border: 1px solid var(--theme1);
+    color: var(--theme1);
 }
 #present-box > .picture, #past-box > .picture, #future-box > .picture{
     display: flex;
@@ -292,12 +292,12 @@ background: white;
 
 #beginner-box > .nepali, #intermediate-box > .nepali, #advanced-box > .nepali, #native-box > .nepali{
     position: absolute;
-    top: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 220px;
     height: 220px;
-    background: var(--theme1);
-    left: 50%;
-    transform: translateX(-50%);
+    border: 1px solid var(--theme1);
     color: white;
 
 }
