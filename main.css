@@ -6,6 +6,7 @@
     --theme2: yellowgreen;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 body{
     width: 100%;
     max-width: 330px;
@@ -160,21 +161,20 @@ background: white;
     box-shadow: 1px 1px 2px gray;
     border-radius: 8px;
 }
-.nepali{
+#vowel-box >.nepali, #syllable-box >.nepali, #compound-box >.nepali{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     background: var(--theme1);
     color: white;
-    font-size: 6em;
+    font-size: 4em;
     line-height: 0;
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    box-shadow: 0 0 2px white;
 }
-.english{
+#vowel-box >.english, #compound-box >.english, #syllable-box >.english{
     position: absolute;
     top: 20px;
     left: 20px;
@@ -185,7 +185,7 @@ background: white;
     box-shadow: 0 0 5px white;
     font-size: 1.3em;
 }
-.sound{
+#vowel-box >.sound, #syllable-box > .sound, #compound-box > .sound{
     width: 160px;
     height: 20px;
     position: absolute;
@@ -195,11 +195,116 @@ background: white;
     padding: 0;
     border: none;
 }
-.picture{
+#vowel-box >.picture, #compound-box > .picture, #syllable-box > .picture{
     position: absolute;
     top: 10px;
     right: 10px;
 }
+#noun-box > .sound, #pronoun-box > .sound, #verb-box > .sound, #adjective-box > .sound, #adverb-box > .sound, #conjunction-box > .sound, #preposition-box > .sound, #present-box > .sound, #past-box > .sound, #future-box > .sound, #beginner-box > .sound, #intermediate-box > .sound, #advanced-box > .sound, #native-box > .sound{
+    display: none;
+
+}
+#noun-box > .picture, #pronoun-box > .picture, #verb-box > .picture, #adjective-box > .picture, #adverb-box > .picture, #conjunction-box > .picture, #preposition-box > .picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    background: var(--theme1);
+    color: white;
+}
+#noun-box > .nepali, #pronoun-box > .nepali, #verb-box > .nepali, #adjective-box > .nepali, #adverb-box > .nepali, #conjunction-box > .nepali, #preposition-box > .nepali {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    padding: 8px;
+    background: var(--theme1);
+    color: white;
+    right: 1px;
+    bottom: 1px;
+}
+#noun-box > .english, #pronoun-box > .english, #verb-box > .english, #adjective-box > .english, #adverb-box > .english, #conjunction-box > .english, #preposition-box > .english {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    bottom: 1px;
+    left: 1px;
+    text-align: center;
+    background: var(--theme1);
+    color: white;
+}
+#present-box > .picture, #past-box > .picture, #future-box > .picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 120px;
+    background: var(--theme1);
+    color: white;
+}
+#present-box > .nepali, #past-box > .nepali, #future-box > .nepali{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    width: 280px;
+    height: 50px;
+    border: 1px solid var(--theme1);
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--theme1);
+}
+#present-box > .english, #past-box > .english, #future-box > .english{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    width: 280px;
+    height: 50px;
+    border: 1px solid var(--theme1);
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--theme1);
+}
+
+#beginner-box > .picture, #intermediate-box > .picture, #advanced-box > .picture, #native-box > .picture{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#beginner-box > .nepali, #intermediate-box > .nepali, #advanced-box > .nepali, #native-box > .nepali{
+    position: absolute;
+    top: 30px;
+    width: 220px;
+    height: 220px;
+    background: var(--theme1);
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+
+}
+#beginner-box > .english, #intermediate-box > .english, #advanced-box > .english, #native-box > .english{
+    display: none;
+}
+
 .prev{
     cursor: pointer;
     border: none;

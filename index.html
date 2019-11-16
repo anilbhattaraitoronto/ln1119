@@ -31,7 +31,7 @@
                 <li class="level-link" onclick="switchSections('.levels', '.level-link', ' active-level', 0)" >Letters</li>
                 <li class="level-link" onclick="switchSections('.levels', '.level-link', ' active-level', 1)" >Words</li>
                 <li class="level-link" onclick="switchSections('.levels', '.level-link', ' active-level', 2)" >Sentences</li>
-                <li class="level-link" onclick="switchSections('.levels', '.level-link', ' active-level', 3)" >Read</li>
+                <li class="level-link" onclick="switchSections('.levels', '.level-link', ' active-level', 3)" >Readings</li>
             </nav>
             <section class="levels">
                 <h2 class="level-title">Letters </h2>
@@ -85,6 +85,9 @@
                     
                     <section class="lesson-box">
                             <h3 class="lesson-title">Noun</h3>
+                            <div class="item-box" id="noun-box"></div>
+                            <button class="prev" onclick="nounLesson.getPreviousItem('noun-box')" >Prev</button>
+                            <button class="next" onclick="nounLesson.getNextItem('noun-box')" >Next</button>
                     </section>
                     <section class="description-box"></section>
                 </div>
@@ -92,6 +95,9 @@
                     
                     <section class="lesson-box">
                             <h3 class="lesson-title">Pronoun</h3>
+                            <div class="item-box" id="pronoun-box"></div>
+                            <button class="prev" onclick="pronounLesson.getPreviousItem('pronoun-box')" >Prev</button>
+                            <button class="next" onclick="pronounLesson.getNextItem('pronoun-box')" >Next</button>
                     </section>
                     <section class="description-box"></section>
                 </div>
@@ -99,6 +105,9 @@
                     
                     <section class="lesson-box">
                             <h3 class="lesson-title">Verb</h3>
+                            <div class="item-box" id="verb-box"></div>
+                            <button class="prev" onclick="verbLesson.getPreviousItem('verb-box')" >Prev</button>
+                            <button class="next" onclick="verbLesson.getNextItem('verb-box')" >Next</button>
                     </section>
                     <section class="description-box"></section>
                 </div>
@@ -106,6 +115,9 @@
                     
                     <section class="lesson-box">
                             <h3 class="lesson-title">Adjective</h3>
+                            <div class="item-box" id="adjective-box"></div>
+                            <button class="prev" onclick="adjectiveLesson.getPreviousItem('adjective-box')" >Prev</button>
+                            <button class="next" onclick="adjectiveLesson.getNextItem('adjective-box')" >Next</button>
                     </section>
                     <section class="description-box"></section>
                 </div>
@@ -113,6 +125,9 @@
                     
                     <section class="lesson-box">
                             <h3 class="lesson-title">Adverb</h3>
+                            <div class="item-box" id="adverb-box"></div>
+                            <button class="prev" onclick="adverbLesson.getPreviousItem('adverb-box')" >Prev</button>
+                            <button class="next" onclick="adverbLesson.getNextItem('adverb-box')" >Next</button>
                     </section>
                     <section class="description-box"></section>
                 </div>
@@ -120,6 +135,9 @@
                    
                     <section class="lesson-box">
                             <h3 class="lesson-title">Conjunction</h3>
+                            <div class="item-box" id="conjunction-box"></div>
+                            <button class="prev" onclick="conjunctionLesson.getPreviousItem('conjunction-box')" >Prev</button>
+                            <button class="next" onclick="conjunctionLesson.getNextItem('conjunction-box')" >Next</button>
                     </section>
                     <section class="description-box"></section>
                 </div>
@@ -127,6 +145,9 @@
                     
                     <section class="lesson-box">
                             <h3 class="lesson-title">Preposition</h3>
+                            <div class="item-box" id="preposition-box"></div>
+                            <button class="prev" onclick="prepositionLesson.getPreviousItem('preposition-box')" >Prev</button>
+                            <button class="next" onclick="prepositionLesson.getNextItem('preposition-box')" >Next</button>
                     </section>
                     <section class="description-box"></section>
                 </div>
@@ -141,28 +162,37 @@
                 <div class="advanced-lesson">
                     
                     <section class="lesson-box">
-                            <h3 class="lesson-title">Present</h3>
+                        <h3 class="lesson-title">Present</h3>
+                        <div class="item-box" id="present-box"></div>
+                        <button class="prev" onclick="presentLesson.getPreviousItem('present-box')" >Prev</button>
+                        <button class="next" onclick="presentLesson.getNextItem('present-box')" >Next</button>
                     </section>
                     <section class="description-box"></section>
                 </div>
                 <div class="advanced-lesson">
                     
                     <section class="lesson-box">
-                            <h3 class="lesson-title">Past</h3>
+                        <h3 class="lesson-title">Past</h3>
+                        <div class="item-box" id="past-box"></div>
+                        <button class="prev" onclick="pastLesson.getPreviousItem('past-box')" >Prev</button>
+                        <button class="next" onclick="pastLesson.getNextItem('past-box')" >Next</button>
                     </section>
                     <section class="description-box"></section>
                 </div>
                 <div class="advanced-lesson">
                     
                     <section class="lesson-box">
-                            <h3 class="lesson-title">Future</h3>
+                        <h3 class="lesson-title">Future</h3>
+                        <div class="item-box" id="future-box"></div>
+                        <button class="prev" onclick="futureLesson.getPreviousItem('future-box')" >Prev</button>
+                        <button class="next" onclick="futureLesson.getNextItem('future-box')" >Next</button>
                     </section>
                     <section class="description-box"></section>
                 </div>
             
             </section>
             <section class="levels">
-                <h2 class="level-title">Read</h2>
+                <h2 class="level-title">Readings</h2>
                 <nav class="level-nav">
                     <li class="lesson-link about-section-link" onclick="switchSections('.about-section', '.about-section-link', ' active-lesson', 0)" >Beginner</li>
                     <li class="lesson-link about-section-link" onclick="switchSections('.about-section', '.about-section-link', ' active-lesson', 1)" >Intermediate</li>
@@ -172,28 +202,40 @@
                 <div class="about-section">
                    
                     <section class="lesson-box">
-                            <h3 class="lesson-title">Beginner</h3>
+                        <h3 class="lesson-title">Beginner</h3>
+                        <div class="item-box" id="beginner-box"></div>
+                        <button class="prev" onclick="beginnerReadings.getPreviousItem('beginner-box')" >Prev</button>
+                        <button class="next" onclick="beginnerReadings.getNextItem('beginner-box')" >Next</button>
                     </section>
                     <section class="description-box"></section>
                 </div>
                 <div class="about-section">
                     
                     <section class="lesson-box">
-                            <h3 class="lesson-title">Intermediate</h3>
+                        <h3 class="lesson-title">Intermediate</h3>
+                        <div class="item-box" id="intermediate-box"></div>
+                        <button class="prev" onclick="intermediateReadings.getPreviousItem('intermediate-box')" >Prev</button>
+                        <button class="next" onclick="intermediateReadings.getNextItem('intermediate-box')" >Next</button>
                     </section>
                     <section class="description-box"></section>
                 </div>
                 <div class="about-section">
                     
                     <section class="lesson-box">
-                            <h3 class="lesson-title">Advanced</h3>
+                        <h3 class="lesson-title">Advanced</h3>
+                        <div class="item-box" id="advanced-box"></div>
+                        <button class="prev" onclick="advancedReadings.getPreviousItem('advanced-box')" >Prev</button>
+                        <button class="next" onclick="advancedReadings.getNextItem('advanced-box')" >Next</button>
                     </section>
                     <section class="description-box"></section>
                 </div>
                 <div class="about-section">
                    
                     <section class="lesson-box">
-                            <h3 class="lesson-title">Native</h3>
+                        <h3 class="lesson-title">Native</h3>
+                        <div class="item-box" id="native-box"></div>
+                        <button class="prev" onclick="nativeReadings.getPreviousItem('native-box')" >Prev</button>
+                        <button class="next" onclick="nativeReadings.getNextItem('native-box')" >Next</button>
                     </section>
                     <section class="description-box"></section>
                 </div>

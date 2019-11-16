@@ -95,3 +95,121 @@ let compoundLesson = new Lesson(
 );
 compoundLesson.getItem("compound-box");
 compoundLesson.getDescription("compound-description");
+
+//Words Lessons
+let nounLesson = new Lesson(
+    [],
+    [],
+    [],
+    []
+);
+nounLesson.getItem("noun-box");
+
+let pronounLesson = new Lesson(
+    [],
+    [],
+    [],
+    [],
+);
+pronounLesson.getItem("pronoun-box");
+
+let verbLesson = new Lesson(
+    [],
+    [],
+    [],
+    [],
+);
+verbLesson.getItem("verb-box");
+
+let adjectiveLesson = new Lesson(
+    [],
+    [],
+    [],
+    [],
+);
+adjectiveLesson.getItem("adjective-box");
+
+let adverbLesson = new Lesson(
+    [],
+    [],
+    [],
+    [],
+
+);
+adverbLesson.getItem("adverb-box");
+
+let conjunctionLesson = new Lesson(
+    [],
+    [],
+    [],
+    [],
+);
+conjunctionLesson.getItem("conjunction-box");
+
+let prepositionLesson = new Lesson(
+    [],
+    [],
+    [],
+    [],
+);
+prepositionLesson.getItem("preposition-box");
+//Sentences Lessons
+
+let presentLesson = new Lesson(
+    [],
+    [],
+    [],
+    [],
+);
+presentLesson.getItem("present-box")
+
+let pastLesson = new Lesson(
+    [],
+    [],
+    [],
+    [],
+);
+pastLesson.getItem("past-box");
+
+let futureLesson = new Lesson(
+    [],
+    [],
+    [],
+    [],
+);
+futureLesson.getItem("future-box");
+
+// Readings Lessons
+
+let beginnerReadings = new Lesson(
+    [],
+    [],
+    [],
+    [],
+);
+beginnerReadings.getItem("beginner-box");
+
+let intermediateReadings = new Lesson(
+    [],
+    [],
+    [],
+    [],
+);
+intermediateReadings.getItem("intermediate-box");
+
+let advancedReadings = new Lesson(
+    [],
+    [],
+    [],
+    [],
+);
+advancedReadings.getItem("advanced-box");
+
+let nativeReadings = new Lesson(
+    [],
+    [],
+    [],
+    [],
+);
+nativeReadings.getItem("native-box");
+
