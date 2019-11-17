@@ -3,7 +3,7 @@
     margin:0;
     padding: 0;
     --theme1: rgb(8, 8, 145);
-    --theme2: rgb(152, 211, 35);
+    --theme2: rgb(184, 231, 204);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -38,7 +38,7 @@ body{
 .masthead::after{
     content: "A New Language, A Whole New World";
     display: block;
-    color: orange;
+    color: rgb(184, 231, 204);
     margin: 0 0 4px 0;
     font-size: .32em;
     margin: auto;
@@ -71,7 +71,7 @@ body{
 .why-nepali li{
     list-style-type: none;
     padding: 12px 0;
-    color: white;
+    color: var(--theme2);
     font-size: .8em;
     box-shadow: 0 0 1px white;
 }
@@ -110,6 +110,7 @@ body{
     padding: 2px 8px;
     box-shadow: 1px 0 0;
     border-top-right-radius: 4px;
+    font-weight: 600;
 }
 .level-link:hover{
     color: var(--theme2);
@@ -124,6 +125,7 @@ body{
     padding: 2px;
     box-shadow: 1px 0px 0px white;
     border-top-right-radius: 8px;
+    font-weight: 500;
 }
 .active-level{
     color: var(--theme2);
@@ -168,6 +170,7 @@ background: white;
 #vowel-box >.nepali, #syllable-box >.nepali, #compound-box >.nepali{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     background: var(--theme1);
@@ -194,7 +197,7 @@ background: white;
     height: 20px;
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     border-radius: 10px;
     padding: 0;
     border: none;
@@ -348,7 +351,7 @@ background: white;
 }
 #vowel-description, #syllable-description, #compound-description{
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(5, auto);
     grid-gap: 5px;
     margin: auto;
     border: 1px solid var(--theme1);
@@ -362,4 +365,5 @@ footer{
     padding: 10px 0;
     text-align: center;
     font-size: .8em;
+    font-weight: 600;
 }

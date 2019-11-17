@@ -98,59 +98,59 @@ compoundLesson.getDescription("compound-description");
 
 //Words Lessons
 let nounLesson = new Lesson(
-    [],
-    [],
-    [],
-    []
+    ['नेपाली'],
+    ['english'],
+    ['sound'],
+    ['picture']
 );
 nounLesson.getItem("noun-box");
 
 let pronounLesson = new Lesson(
-    [],
-    [],
-    [],
-    [],
+    ['नेपाली'],
+    ['english'],
+    ['sound'],
+    ['picture']
 );
 pronounLesson.getItem("pronoun-box");
 
 let verbLesson = new Lesson(
-    [],
-    [],
-    [],
-    [],
+    ['नेपाली'],
+    ['english'],
+    ['sound'],
+    ['picture']
 );
 verbLesson.getItem("verb-box");
 
 let adjectiveLesson = new Lesson(
-    [],
-    [],
-    [],
-    [],
+    ['नेपाली'],
+    ['english'],
+    ['sound'],
+    ['picture']
 );
 adjectiveLesson.getItem("adjective-box");
 
 let adverbLesson = new Lesson(
-    [],
-    [],
-    [],
-    [],
+    ['नेपाली'],
+    ['english'],
+    ['sound'],
+    ['picture']
 
 );
 adverbLesson.getItem("adverb-box");
 
 let conjunctionLesson = new Lesson(
-    [],
-    [],
-    [],
-    [],
+    ['नेपाली'],
+    ['english'],
+    ['sound'],
+    ['picture']
 );
 conjunctionLesson.getItem("conjunction-box");
 
 let prepositionLesson = new Lesson(
-    [],
-    [],
-    [],
-    [],
+    ['नेपाली'],
+    ['english'],
+    ['sound'],
+    ['picture']
 );
 prepositionLesson.getItem("preposition-box");
 
