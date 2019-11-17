@@ -296,6 +296,7 @@ background: white;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    color: var(--theme1);
 }
 
 #beginner-box > .nepali, #intermediate-box > .nepali, #advanced-box > .nepali, #native-box > .nepali{
@@ -305,8 +306,11 @@ background: white;
     transform: translate(-50%, -50%);
     width: 220px;
     height: 220px;
-    border: 1px solid var(--theme1);
-    color: white;
+    box-shadow: 0 0 2px var(--theme1);
+    border-radius: 8px;
+    color: var(--theme1);
+    padding: 8px;
+    text-align: left;
 
 }
 #beginner-box > .english, #intermediate-box > .english, #advanced-box > .english, #native-box > .english{
